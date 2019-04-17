@@ -31,8 +31,9 @@
 				would be seasoned in both front-end and back-end web design. Because funding is always so tight, candidates
 				need to be more driven by moral motives than fiscal, though starting salary for this position would be on
 				par with the average for entry-level web developing.</li>
-			<li><strong>Goals:</strong></li>
-			<li><strong>User Story:</strong></li>
+			<li><strong>Goals:</strong>Howard just wants help with his perpetually multiplying work load.</li>
+			<li><strong>User Story:</strong>As a user, I want to find out if this self-proclaimed web developer would be a
+				good fit for my team at Wikipedia.</li>
 
 		</ul>
 	</body>
