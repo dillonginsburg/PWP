@@ -34,6 +34,7 @@
 			<li><strong>Goals:</strong>Howard just wants help with his perpetually multiplying work load.</li>
 			<li><strong>User Story:</strong>As a user, I want to find out if this self-proclaimed web developer would be a
 				good fit for my team at Wikipedia.</li>
+			
 
 		</ul>
 	</body>
