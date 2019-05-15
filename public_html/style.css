@@ -1,5 +1,5 @@
 #hello-world {
-	font-size: 10vh;
+	font-size: 7vw;
 	text-align: center;
 	position: absolute;
 	height: 200px;
@@ -7,6 +7,27 @@
 	margin: -100px 0 0 -200px;
 	top: 50%;
 	left: 50%;
+}
+
+#selfie {
+	max-height: 50vh;
+	width: auto;
+}
+
+#about-me {
+	display: flex;
+	align-items: center;
+}
+
+#about-me-txt{
+	background-image: url(90%transparentWhite.png);
+
+}
+
+body {
+	background-image: url(water-png-723.png);
+	background-repeat: no-repeat;
+
 }
 
 .carousel {
