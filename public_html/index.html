@@ -14,33 +14,120 @@
 	</head>
 
 	<body>
-		<div class="container">
-			<nav class="navbar navbar-expand-lg navbar-light bg-none">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-					<ul class="navbar-nav">
-						<li class="nav-item active">
-							<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="portfolio.html">Portfolio</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="contact.html">Contact</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="about-me.html">About Me</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</div>
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-light bg-none">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+						<ul class="navbar-nav">
+							<li class="nav-item active">
+								<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="portfolio.html">Portfolio</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contact.html">Contact</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="about-me.html">About Me</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		<section id="section-1">
+			<div class="container" id="hello-world">
+				<p>Developer</p>
+			</div>
+		</section>
 
-		<div class="container" id="hello-world">
-			<p>Developer</p>
-		</div>
+
+		<section id="section-2">
+			<div class="container" id="about-me">
+
+				<div class="container" id="about-me-txt">
+					<p>Faucibus turpis in eu mi bibendum neque. Metus dictum at tempor commodo ullamcorper a lacus vestibulum
+						sed. Ut eu sem integer vitae. Bibendum neque egestas congue quisque egestas diam. Id neque aliquam
+						vestibulum morbi. Nulla pharetra diam sit amet nisl suscipit. Varius quam quisque id diam vel quam
+						elementum pulvinar etiam. Massa ultricies mi quis hendrerit dolor. Tempor nec feugiat nisl pretium fusce
+						id velit ut. At quis risus sed vulputate odio ut. Ultrices mi tempus imperdiet nulla malesuada. A lacus
+						vestibulum sed arcu non.</p>
+				</div>
+
+				<div class="container" id="about-me-img">
+					<img src="images/my-selfie.png" id="selfie" alt="selfie">
+				</div>
+
+			</div>
+		</section>
+
+
+		<section id="section-3">
+			<div class="carousel">
+
+			</div>
+		</section>
+
+
+		<section id="section-4">
+			<form id="contact-me" action="php/mailer.php" method="post">
+				<div class="form-group">
+					<label for="contactDemoName">Name <span class="text-danger">*</span></label>
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"></span>
+							<i class="fa fa-user" aria-hidden="true"></i>
+						</div>
+						<input type="text" class="form-control" id="contactDemoName" name="contactDemoName" placeholder="Name">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="contactDemoEmail">Email <span class="text-danger">*</span></label>
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"></span>
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</div>
+						<input type="email" class="form-control" id="contactDemoEmail" name="contactDemoEmail" placeholder="Email">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="contactDemoSubject">Subject</label>
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"></span>
+							<i class="fa fa-pencil" aria-hidden="true"></i>
+						</div>
+						<input type="text" class="form-control" id="contactDemoSubject" name="contactDemoSubject" placeholder="Subject">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="contactDemoMessage">Message <span class="text-danger">*</span></label>
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"></span>
+							<i class="fa fa-comment" aria-hidden="true"></i>
+						</div>
+						<textarea class="form-control" rows="5" id="contactDemoMessage" name="contactDemoMessage" placeholder="I <3 CopyPasta :D~ (2000 characters max)"></textarea>
+					</div>
+				</div>
+
+				<!-- reCAPTCHA -->
+				<div class="g-recaptcha" data-sitekey="--YOUR RECAPTCHA SITE KEY--"></div>
+
+				<button class="btn btn-success" type="submit"><i class="fa fa-paper-plane"></i> Send</button>
+				<button class="btn btn-warning" type="reset"><i class="fa fa-ban"></i> Reset</button>
+			</form>
+
+			<!--empty area for form error/success output-->
+			<div class="row">
+				<div class="col-xs-12"></div>
+					<div id="output-area"></div>
+				</div>
+		</section>
+
 
 
 	</body>
