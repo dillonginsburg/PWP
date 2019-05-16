@@ -11,6 +11,8 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="script.js"></script>
+
 	</head>
 
 	<body>
@@ -65,67 +67,85 @@
 
 
 		<section id="section-3">
-			<div class="carousel">
-
-			</div>
+				<div class="container" id="carousel">
+					<div class="button" onclick="shiftLeft()"><img src="https://image.ibb.co/mRsEb7/left_arrow.png" alt=""></div>
+					<div class="cards-wrapper">
+						<ul class="cards__container">
+							<li class="box"><img src="images/1.png" alt="cat" id="cat"> box 1</li>
+							<li class="box">box 2</li>
+							<li class="box">box 3</li>
+							<li class="box">box 4</li>
+							<li class="box">box 5</li>
+							<li class="box box--hide">box 6</li>
+							<li class="box box--hide">box 7</li>
+						</ul>
+						<div class="card__text-content">
+							<h3 class="card__title">My Portfolio</h3>
+							<div class="card__summary">Click an image to go to the actual page! :)</div>
+						</div>
+					</div>
+					<div class="button" onclick="shiftRight()"><img src="https://image.ibb.co/dfPSw7/right_arrow.png" alt=""></div>
+				</div>
 		</section>
 
 
 		<section id="section-4">
-			<form id="contact-me" action="php/mailer.php" method="post">
-				<div class="form-group">
-					<label for="contactDemoName">Name <span class="text-danger">*</span></label>
-					<div class="input-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"></span>
-							<i class="fa fa-user" aria-hidden="true"></i>
+			<div class="container" id="contact-form">
+				<form id="contact-me" action="php/mailer.php" method="post">
+					<div class="form-group">
+						<label for="contactDemoName">Name <span class="text-danger">*</span></label>
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text"></span>
+								<i class="fa fa-user" aria-hidden="true"></i>
+							</div>
+							<input type="text" class="form-control" id="contactDemoName" name="contactDemoName" placeholder="Name">
 						</div>
-						<input type="text" class="form-control" id="contactDemoName" name="contactDemoName" placeholder="Name">
 					</div>
-				</div>
-				<div class="form-group">
-					<label for="contactDemoEmail">Email <span class="text-danger">*</span></label>
-					<div class="input-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"></span>
-							<i class="fa fa-envelope" aria-hidden="true"></i>
+					<div class="form-group">
+						<label for="contactDemoEmail">Email <span class="text-danger">*</span></label>
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text"></span>
+								<i class="fa fa-envelope" aria-hidden="true"></i>
+							</div>
+							<input type="email" class="form-control" id="contactDemoEmail" name="contactDemoEmail" placeholder="Email">
 						</div>
-						<input type="email" class="form-control" id="contactDemoEmail" name="contactDemoEmail" placeholder="Email">
 					</div>
-				</div>
-				<div class="form-group">
-					<label for="contactDemoSubject">Subject</label>
-					<div class="input-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"></span>
-							<i class="fa fa-pencil" aria-hidden="true"></i>
+					<div class="form-group">
+						<label for="contactDemoSubject">Subject</label>
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text"></span>
+								<i class="fa fa-pencil" aria-hidden="true"></i>
+							</div>
+							<input type="text" class="form-control" id="contactDemoSubject" name="contactDemoSubject" placeholder="Subject">
 						</div>
-						<input type="text" class="form-control" id="contactDemoSubject" name="contactDemoSubject" placeholder="Subject">
 					</div>
-				</div>
-				<div class="form-group">
-					<label for="contactDemoMessage">Message <span class="text-danger">*</span></label>
-					<div class="input-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"></span>
-							<i class="fa fa-comment" aria-hidden="true"></i>
+					<div class="form-group">
+						<label for="contactDemoMessage">Message <span class="text-danger">*</span></label>
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text"></span>
+								<i class="fa fa-comment" aria-hidden="true"></i>
+							</div>
+							<textarea class="form-control" rows="5" id="contactDemoMessage" name="contactDemoMessage" placeholder="(2000 characters max)"></textarea>
 						</div>
-						<textarea class="form-control" rows="5" id="contactDemoMessage" name="contactDemoMessage" placeholder="I <3 CopyPasta :D~ (2000 characters max)"></textarea>
 					</div>
-				</div>
 
-				<!-- reCAPTCHA -->
-				<div class="g-recaptcha" data-sitekey="--YOUR RECAPTCHA SITE KEY--"></div>
+					<!-- reCAPTCHA -->
+					<div class="g-recaptcha" data-sitekey="--YOUR RECAPTCHA SITE KEY--"></div>
 
-				<button class="btn btn-success" type="submit"><i class="fa fa-paper-plane"></i> Send</button>
-				<button class="btn btn-warning" type="reset"><i class="fa fa-ban"></i> Reset</button>
-			</form>
+					<button class="btn btn-success" type="submit"><i class="fa fa-paper-plane"></i> Send</button>
+					<button class="btn btn-warning" type="reset"><i class="fa fa-ban"></i> Reset</button>
+				</form>
 
-			<!--empty area for form error/success output-->
-			<div class="row">
-				<div class="col-xs-12"></div>
-					<div id="output-area"></div>
+				<!--empty area for form error/success output-->
+				<div class="row">
+					<div class="col-xs-12"></div>
+						<div id="output-area"></div>
 				</div>
+			</div>
 		</section>
 
 
