@@ -17,8 +17,8 @@ $smtpUser = '-- SendGrid USER --';
 $smtpSecret = '-- SendGrid SECRET --';
 
 // your Google reCAPTCHA keys here
-$siteKey = '-- reCAPTCHA SITE KEY --';
-$secret = '-- reCAPTCHA SECRET KEY --';
+$siteKey = '6LclZKYUAAAAALptsbdVmqB2e387tp-53GdBBe59';
+$secret = '6LclZKYUAAAAAN-_vi_BV_iHRChkDnKA_J5Pl5tY';
 
 /**
  * attach the recipients to the message

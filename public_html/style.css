@@ -1,16 +1,21 @@
 body {
 }
 
-
-
 #section-1 {
 	display: flex;
 	height: 100vh;
+	width:100vw;
+	flex-wrap: wrap;
 	align-content: center;
 	align-items: center;
 	background-image: linear-gradient(to bottom right, #2c3e79, #a1a9c1);
 }
 
+#nav {
+	position: absolute;
+	justify-self: center;
+	top:0
+}
 
 #iceburg {
 	position: absolute;
@@ -18,7 +23,7 @@ body {
 	top: 0;
 	right: 0;
 	bottom: 0;
-	margin: 20%;
+	margin: 10%;
 	min-width: 100px;
 	min-height: 100px;
 }
@@ -29,23 +34,28 @@ body {
 }
 
 #title {
-	font-size: 17vh;
+	font-size: 9vw;
+	font-family: serif;
 }
 
 #subtitle {
-	font-size: 9vh;
+	font-size: 3vw;
 	display: inline-flex;
 	}
 
 #front{
+	font-family: "Brush Script MT", sans-serif;
 	animation-name: pulsing;
 	animation-duration: 2s;
-	animation-delay: 2s;
+	animation-delay: 1s;
 	animation-fill-mode: both;
 	animation-timing-function: ease-out;
 }
 
+
 #back{
+	font-family: "Droid Serif", sans-serif;
+	font-weight: bolder;
 	animation-name: pulsing;
 	animation-duration: 2s;
 	animation-delay: 4s;
@@ -68,19 +78,17 @@ body {
 }
 
 #section-2 {
-	display: flex;
-	flex-wrap: nowrap;
 	height: 100vh;
 	background-color: #a1a9c1;
 }
+
 #about-me {
 	display: flex;
-	flex-wrap: nowrap;
-	justify-content: space-around;
 	align-items: center;
 }
 
 #about-me-txt{
+	max-height: 100vh;
 	flex-basis: 40%;
 
 }
@@ -89,25 +97,31 @@ body {
 	flex-basis: 40%;
 }
 
+
 #section-3 {
-	display: flex;
 	height: 100vh;
 	background-color: #2c3e79;
 }
 
 #portfolio {
-	display: flex;
-	flex-wrap: nowrap;
 	justify-content: space-around;
 	align-items: center;
 	font-size: 9vh;
 }
 
+#portfoliotxt {
+	flex-basis: 40%;
+}
+
+#carousel {
+}
 
 #section-4 {
 	display: flex;
-	height: 100vh;
 	background-color: #a1a9c1;
+	align-items: center;
+	padding-top:5%;
+	padding-bottom: 5%;
 }
 
 #contact-form{
