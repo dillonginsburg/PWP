@@ -3,19 +3,13 @@ body {
 
 #section-1 {
 	display: flex;
-	height: 100vh;
-	width:100vw;
+	height: 90vh;
 	flex-wrap: wrap;
 	align-content: center;
 	align-items: center;
 	background-image: linear-gradient(to bottom right, #2c3e79, #a1a9c1);
 }
 
-#nav {
-	position: absolute;
-	justify-self: center;
-	top:0
-}
 
 #iceburg {
 	position: absolute;
@@ -78,51 +72,55 @@ body {
 }
 
 #section-2 {
-	height: 100vh;
+	height: 90vh;
 	background-color: #a1a9c1;
 }
 
-#about-me {
-	display: flex;
-	align-items: center;
-}
+/*#about-me {*/
+/*	display: flex;*/
+/*	align-items: center;*/
+/*}*/
 
-#about-me-txt{
-	max-height: 100vh;
-	flex-basis: 40%;
+/*#about-me-txt{*/
+/*	max-height: 90vh;*/
+/*	flex-basis: 40%;*/
 
-}
+/*}*/
 
-#selfie{
-	flex-basis: 40%;
-}
+/*#selfie{*/
+/*	flex-basis: 40%;*/
+/*}*/
 
 
 #section-3 {
-	height: 100vh;
+	height: 90vh;
 	background-color: #2c3e79;
 }
 
-#portfolio {
-	justify-content: space-around;
-	align-items: center;
-	font-size: 9vh;
-}
+/*.carousel-item {*/
+/*	max-width: 30vw;*/
+/*	height: auto;*/
+/*}*/
 
-#portfoliotxt {
-	flex-basis: 40%;
-}
+/*#portfolio {*/
+/*	justify-content: space-around;*/
+/*	align-items: center;*/
+/*	font-size: 9vh;*/
+/*}*/
 
-#carousel {
-}
+/*#portfoliotxt {*/
+/*	flex-basis: 40%;*/
+/*}*/
 
-#section-4 {
-	display: flex;
-	background-color: #a1a9c1;
-	align-items: center;
-	padding-top:5%;
-	padding-bottom: 5%;
-}
+
+
+/*#section-4 {*/
+/*	display: flex;*/
+/*	background-color: #a1a9c1;*/
+/*	align-items: center;*/
+/*	padding-top:5%;*/
+/*	padding-bottom: 5%;*/
+/*}*/
 
 #contact-form{
 
